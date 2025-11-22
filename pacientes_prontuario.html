@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prontuário Clínico - VidaPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a class="active" href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="adm.html">ADM Hospitalar</a></li>            
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <h1><img src="img/historia.png"> Prontuário Clínico</h1>
+
+        <!-- CARD PRINCIPAL -->
+        <div class="form-card">
+
+            <!-- DADOS DO PACIENTE -->
+            <h2 class="form-section">📌 Dados do Paciente</h2>
+
+            <div class="info-grid">
+                <p><strong>Nome:</strong> João da Silva</p>
+                <p><strong>Idade:</strong> 42 anos</p>
+                <p><strong>CPF:</strong> 123.456.789-10</p>
+                <p><strong>Contato:</strong> (31) 98877-6655</p>
+                <p><strong>Convênio:</strong> Unimed</p>
+                <p><strong>Prontuário:</strong> 320150</p>
+            </div>
+
+            <!-- HISTÓRICO CLÍNICO -->
+            <h2 class="form-section">📚 Histórico Clínico</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                    <th>Resumo</th>
+                </tr>
+                <tr>
+                    <td>10/10/2025</td>
+                    <td>Dra. Ana Paula</td>
+                    <td>Ortopedia</td>
+                    <td>Paciente com dores na lombar há 3 semanas.</td>
+                </tr>
+                <tr>
+                    <td>03/09/2025</td>
+                    <td>Dr. João Silva</td>
+                    <td>Urologia</td>
+                    <td>Exame de rotina, sem alterações.</td>
+                </tr>
+            </table>
+
+            <!-- EXAMES -->
+            <h2 class="form-section">🩺 Exames Realizados</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Ultrassom abdominal</td>
+                    <td>05/10/2025</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Hemograma completo</td>
+                    <td>12/09/2025</td>
+                    <td>Sem alterações</td>
+                </tr>
+            </table>
+
+            <!-- PRESCRIÇÕES -->
+            <h2 class="form-section">💊 Prescrições</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Medicação</th>
+                    <th>Orientações</th>
+                </tr>
+                <tr>
+                    <td>12/10/2025</td>
+                    <td>Dra. Ana Paula</td>
+                    <td>Dipirona 500mg</td>
+                    <td>Tomar a cada 8h por 5 dias</td>
+                </tr>
+            </table>
+
+            <!-- EVOLUÇÃO MÉDICA -->
+            <h2 class="form-section">📝 Nova Evolução Médica</h2>
+
+            <textarea class="textarea-prontuario" placeholder="Digite aqui a evolução clínica do paciente..."></textarea>
+
+            <button class="btn-salvar">Salvar Evolução</button>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

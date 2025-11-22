@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ADM - Dashboard Geral</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a class="active" href="adm.html">ADM Hospitalar</a></li>
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h1><img src="img/adm.png"> Dashboard Administrativo Geral</h1>
+
+        <div class="card-container">
+
+            <div class="card">
+                <a class="card-link" href="adm_faturamento.html">
+                    <h3>Faturamento Mensal</h3>
+                    <p>R$ 1.240.000</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a class="card-link" href="adm_internacoes.html">
+                    <h3>Internações Ativas</h3>
+                    <p>58 Pacientes</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a class="card-link" href="adm_taxa_ocupacao.html">
+                    <h3>Taxa de Ocupação</h3>
+                    <p>87%</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a class="card-link" href="adm_indice_atendimento.html">
+                    <h3>Índice de Atendimento</h3>
+                    <p>92%</p>
+                </a>
+            </div>
+
+        </div>
+
+        <h2 style="margin-top:40px;">Gráficos Estatísticos</h2>
+
+        <div class="chart-container">
+
+            <div class="chart">
+                <h3>Ocupação por Setor</h3>
+                <div class="bar" style="height: 80%;"></div>
+                <div class="bar" style="height: 95%;"></div>
+                <div class="bar" style="height: 65%;"></div>
+                <p class="chart-labels">Clínica | UTI | Pediatria</p>
+            </div>
+
+            <div class="chart">
+                <h3>Atendimentos (Últimos 7 dias)</h3>
+
+                <div class="chart-bars">
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 80%;"></div>
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 90%;"></div>
+                </div>
+
+                <p class="chart-labels">Seg | Ter | Qua | Qui | Sex</p>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+</body>
+</html>

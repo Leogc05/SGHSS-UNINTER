@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>C/A Pacientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a class="active" href="pacientes.html">C/A Pacientes</a></li>            
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="adm.html">ADM Hospitalar</a></li>
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>    
+
+    <main class="content">
+
+        <div class="card-container">
+            <div class="card">
+                <a class="card-link" href="pacientes_cadastro.html">
+                    <h3><img src="img/cadastro.png"><!-- <a href="https://www.flaticon.com/br/icones-gratis/cadastro" title="cadastro ícones">Cadastro ícones criados por Namelix - Flaticon</a> -->Cadastro de pacientes</h3>
+                </a>
+            </div>
+        </div>
+        
+        <h2><img src="img/c.a paciente.png"><!-- <a href="https://www.flaticon.com/br/icones-gratis/tratamento" title="tratamento ícones">Tratamento ícones criados por Muhammad_Usman - Flaticon</a> --> Consultas e exames agendados</h2>
+        
+        <form id="formBusca" action="pacientes_agendamentos.html">
+            <input type="text" id="campoBusca" placeholder="Digite CPF, Nome Completo ou Prontuário">
+            <button type="submit">Buscar</button>
+        </form>         
+
+        <h2><img src="img/historia.png">Prontuário Clínico</h2><!--<a href="https://www.flaticon.com/br/icones-gratis/historia" title="história ícones">História ícones criados por Tempo_doloe - Flaticon</a>-->
+
+        <form id="formBusca" action="pacientes_prontuario.html">
+            <input type="text" id="campoBusca" placeholder="Digite CPF, Nome Completo ou Prontuário">
+            <button type="submit">Buscar</button>
+        </form>   
+
+        <script>
+            const form = document.getElementById("formBusca");
+            const campo = document.getElementById("campoBusca");
+
+            form.addEventListener("submit", function(event) {
+                if (campo.value.trim() === "") {
+                    event.preventDefault(); 
+                    alert("Digite CPF, Nome Completo ou Prontuário");
+                }
+            });
+        </script>
+        
+
+    </main>
+
+</body>
+</html>

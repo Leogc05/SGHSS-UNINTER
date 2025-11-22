@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pacientes - VidaPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a class="active" href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="adm.html">ADM Hospitalar</a></li>
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <h1><img src="img/cadastro.png"> Cadastro de Pacientes</h1>
+
+        <div class="form-card">
+
+            <!-- FOTO + BOTÃO -->
+            <div class="foto-container">
+                <div class="foto-box">Foto</div>
+                <button class="btn-foto">Tirar Foto</button>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form class="form-grid">
+
+                <h3 class="form-section">Dados Pessoais</h3>
+
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="text" placeholder="CPF" required>
+                <input type="date" placeholder="Data de Nascimento" required>
+
+                <select required>
+                    <option value="">Sexo</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+                </select>
+
+                <h3 class="form-section">Contato</h3>
+
+                <input type="text" placeholder="Telefone" required>
+                <input type="email" placeholder="E-mail">
+
+                <h3 class="form-section">Endereço</h3>
+
+                <input type="text" placeholder="Logradouro" required>
+                <input type="text" placeholder="Número" required>
+                <input type="text" placeholder="Bairro" required>
+                <input type="text" placeholder="Cidade" required>
+                <input type="text" placeholder="Estado" required>
+
+                <button type="submit" class="btn-salvar">Salvar Cadastro</button>
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

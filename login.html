@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - SGHSS</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="img/Vida Plus.png">
+        <p>Selecione seu tipo de acesso</p>
+
+        <div class="login-options">
+            <button class="btn funcionario" onclick="showForm('funcionario')">Funcionário</button>
+            <button class="btn medico" onclick="showForm('medico')">Médico</button>
+            <button class="btn paciente" onclick="showForm('paciente')">Paciente</button>
+        </div>
+
+        <!-- Formulário escondido inicialmente -->
+        <form id="login-form" class="hidden" onsubmit="redirectUser(event)">
+            <h3 id="tipo-usuario"></h3>
+
+            <input type="text" placeholder="CPF" id="cpf" required>
+            <input type="password" placeholder="Senha" id="senha" required>
+
+            <button type="submit" class="btn entrar">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        let userType = "";
+
+        function showForm(type) {
+            userType = type;
+
+            const title = document.getElementById("tipo-usuario");
+            const form = document.getElementById("login-form");
+
+            // Atualiza título do formulário
+            title.innerText = "Login - " + type.charAt(0).toUpperCase() + type.slice(1);
+
+            // Exibe formulário
+            form.classList.remove("hidden");
+        }
+
+        function redirectUser(event) {
+            event.preventDefault();
+
+            if (userType === "funcionario") {
+                window.location.href = "index.html";
+            } 
+            else if (userType === "medico") {
+                window.location.href = "medico_home.html";
+            } 
+            else if (userType === "paciente") {
+                window.location.href = "paciente_home.html";
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>

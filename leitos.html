@@ -2,16 +2,18 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Gestão de Leitos</title>
+    <title>Gestão de Leitos - VidaPlus</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- MENU LATERAL -->
     <aside class="sidebar">
         <img src="img/Vida Plus.png">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a class="active" href="leitos.html">Gestão de Leitos</a></li>
             <li><a href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -21,30 +23,127 @@
         </ul>
     </aside>
 
+    <!-- CONTEÚDO -->
     <main class="content">
-        <h1><img src="img/leito.png"> Gestão de Leitos</h1><!--<a href="https://www.flaticon.com/br/icones-gratis/hospital" title="hospital ícones">Hospital ícones criados por surang - Flaticon</a>-->
 
+        <h1><img src="img/leito.png"> Gestão de Leitos</h1>
+
+        <!-- CARDS RESUMO -->
         <div class="card-container">
 
             <div class="card">
-                <h3>Apartamentos</h3>
-                <p>Ocupados: 10</p>
-                <p>Disponíveis: 4</p>
+                <h3>Ocupação Geral</h3>
+                <p>45 / 72 leitos ocupados</p>
             </div>
 
             <div class="card">
-                <h3>Hospital Dia</h3>
-                <p>Ocupados: 3</p>
-                <p>Disponíveis: 7</p>
+                <h3>Alta Próxima</h3>
+                <p>7 pacientes</p>
             </div>
 
             <div class="card">
-                <h3>Enfermaria</h3>
-                <p>Ocupados: 21</p>
-                <p>Disponíveis: 15</p>
+                <h3>Limpeza / Manutenção</h3>
+                <p>3 leitos</p>
             </div>
 
         </div>
+
+        <!-- FILTROS -->
+        <div class="card" style="margin-top: 30px;">
+            <h2 style="margin-bottom: 15px;">Filtros</h2>
+
+            <div class="info-grid">
+                <div>
+                    <label>Setor:</label>
+                    <select class="input">
+                        <option selected>Todos</option>
+                        <option>Apartamentos</option>
+                        <option>Enfermaria</option>
+                        <option>Hospital Dia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Status:</label>
+                    <select class="input">
+                        <option selected>Todos</option>
+                        <option>Ocupado</option>
+                        <option>Disponível</option>
+                        <option>Limpeza</option>
+                        <option>Manutenção</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEGENDA -->
+        <div class="card" style="margin-top: 25px;">
+            <h3>Legenda de Status</h3>
+            <p><span style="color: red; font-weight: bold;">■</span> Ocupado</p>
+            <p><span style="color: green; font-weight: bold;">■</span> Disponível</p>
+            <p><span style="color: orange; font-weight: bold;">■</span> Limpeza</p>
+            <p><span style="color: gray; font-weight: bold;">■</span> Manutenção</p>
+        </div>
+
+        <!-- LISTA DE LEITOS -->
+        <h2 style="margin-top: 40px;">Tabela de Leitos</h2>
+
+        <table class="table">
+            <tr>
+                <th>Leito</th>
+                <th>Setor</th>
+                <th>Status</th>
+                <th>Paciente</th>
+                <th>Ação</th>
+            </tr>
+
+            <tr>
+                <td>Apto 101</td>
+                <td>Apartamento</td>
+                <td style="color:red; font-weight:bold;">Ocupado</td>
+                <td>Marcos Silva</td>
+                <td>
+                    <button class="btn-salvar">Transferir</button>
+                    <button class="btn-salvar">Dar Alta</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Apto 102</td>
+                <td>Apartamento</td>
+                <td style="color:green; font-weight:bold;">Disponível</td>
+                <td>—</td>
+                <td><button class="btn-salvar">Internar</button></td>
+            </tr>
+
+            <tr>
+                <td>Enf. 205</td>
+                <td>Enfermaria</td>
+                <td style="color:red; font-weight:bold;">Ocupado</td>
+                <td>Ana Paula</td>
+                <td>
+                    <button class="btn-salvar">Transferir</button>
+                    <button class="btn-salvar">Dar Alta</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enf. 209</td>
+                <td>Enfermaria</td>
+                <td style="color:orange; font-weight:bold;">Limpeza</td>
+                <td>—</td>
+                <td><button class="btn-salvar">Liberar</button></td>
+            </tr>
+
+            <tr>
+                <td>HD 12</td>
+                <td>Hospital Dia</td>
+                <td style="color:gray; font-weight:bold;">Manutenção</td>
+                <td>—</td>
+                <td><button class="btn-salvar">Liberar</button></td>
+            </tr>
+
+        </table>
 
     </main>
 

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title> Consultas e exames agendados</title>
+    <title>Prontuário do Paciente</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +13,8 @@
         <img src="img/Vida Plus.png">
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a class="active" href="pacientes.html">C/A Pacientes</a></li>            
+            <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a href="leitos.html">Gestão de Leitos</a></li>
             <li><a href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -25,64 +26,87 @@
 
     <main class="content">
 
-        <h1>Prontuário do Paciente</h1>
+        <h1><img src="img/historia.png"> Consultas e exames agendados</h1>
 
-        <h2><img src="img/c.a paciente.png"> Consultas e exames agendados</h2>
+        <!-- DADOS DO PACIENTE -->
+        <div class="card prontuario-card">
+            <h2>📌 Dados do Paciente</h2>
+            <p><strong>Nome:</strong> Maria Silva</p>
+            <p><strong>CPF:</strong> 123.456.789-00</p>
+            <p><strong>Idade:</strong> 34 anos</p>
+            <p><strong>Contato:</strong> (31) 98877-6655</p>
+            <p><strong>Convênio:</strong> Unimed</p>
+            <p><strong>Nº do Prontuário:</strong> 320150</p>
+            <p><strong>Última Atualização:</strong> 10/11/2025</p>
+        </div>
+
+
+        <!-- CONSULTAS AGENDADAS -->
+        <h2><img src="img/c.a paciente.png"> Consultas Agendadas</h2>
 
         <table class="table">
             <tr>
-                <th>Tipo</th>
                 <th>Médico</th>
                 <th>Especialidade</th>
                 <th>Horário</th>
                 <th>Data</th>
-                <th>Atendimento</th>
+                <th>Status</th>
             </tr>
 
             <tr>
-                <td>Consulta</td>
-                <td>João Silva</td>
+                <td>Dr. João Silva</td>
                 <td>Urologia</td>
                 <td>09:00</td>
                 <td>05/12/2025</td>
-                <td>320150</td>
-            </tr>
-
-            <tr>
-                <td>Ultrassom</td>
-                <td>Marcos Júnior</td>
-                <td>Urologia</td>
-                <td>12:00</td>
-                <td>03/01/2026</td>
-                <td>—</td>
+                <td>Agendada</td>
             </tr>
         </table>
 
-        <br><br>
 
-        <h2><img src="img/historia.png"> Histórico Clínico</h2>
+        <!-- EXAMES AGENDADOS -->
+        <h2><img src="img/c.a paciente.png"> Exames Agendados</h2>
+
+        <table class="table">
+            <tr>
+                <th>Tipo do Exame</th>
+                <th>Médico</th>
+                <th>Horário</th>
+                <th>Data</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Ultrassom Abdominal</td>
+                <td>Dr. Marcos Júnior</td>
+                <td>12:00</td>
+                <td>03/01/2026</td>
+                <td>Pendente</td>
+            </tr>
+        </table>
+
+
+        <!-- HISTÓRICO CLÍNICO -->
+        <h2><img src="img/historia.png"> Histórico Clínico da Maria Silva</h2>
 
         <div class="card prontuario-card">
-            <h3>Dados do Paciente</h3>
-            <p><strong>Nome:</strong> Maria Silva</p>
-            <p><strong>CPF:</strong> 123.456.789-00</p>
-            <p><strong>Idade:</strong> 34 anos</p>
-            <p><strong>Última Atualização:</strong> 10/11/2024</p>
+            <h3>Consulta — 10/11/2024</h3>
+            <p><strong>Médico:</strong> Dr. João Silva (Urologia)</p>
+            <p><strong>Diagnóstico:</strong> Hipertensão — Estágio Inicial</p>
+            <p><strong>Prescrição:</strong> Losartana 50mg — 1x ao dia</p>
         </div>
 
         <div class="card prontuario-card">
-            <h3>Consultas Recentes</h3>
-            <p><strong>10/11/2024 — Dr. João Silva (Urologia)</strong></p>
-            <p>Diagnóstico: Hipertensão — estágio inicial.</p>
-            <p>Prescrição: Losartana 50mg (1x ao dia)</p>
+            <h3>Exame — 15/08/2024</h3>
+            <p><strong>Exame:</strong> Ultrassom Abdominal</p>
+            <p><strong>Resultado:</strong> Normal</p>
         </div>
 
         <div class="card prontuario-card">
-            <h3>Exames Realizados</h3>
-            <p><strong>15/08/2024 — Ultrassom abdominal</strong></p>
-            <p>Resultado: Normal.</p>
+            <h3>Consulta — 03/09/2023</h3>
+            <p><strong>Médico:</strong> Dra. Ana Paula (Clínica Geral)</p>
+            <p><strong>Diagnóstico:</strong> Dor lombar persistente</p>
+            <p><strong>Tratamento:</strong> Anti-inflamatório por 7 dias</p>
         </div>
-
 
     </main>
 

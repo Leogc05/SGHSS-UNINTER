@@ -12,7 +12,8 @@
         <img src="img/Vida Plus.png">
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a class="active" href="pacientes.html">C/A Pacientes</a></li>            
+            <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a href="leitos.html">Gestão de Leitos</a></li>
             <li><a href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -27,36 +28,52 @@
         <div class="card-container">
             <div class="card">
                 <a class="card-link" href="pacientes_cadastro.html">
-                    <h3><img src="img/cadastro.png"><!-- <a href="https://www.flaticon.com/br/icones-gratis/cadastro" title="cadastro ícones">Cadastro ícones criados por Namelix - Flaticon</a> -->Cadastro de pacientes</h3>
+                    <h3>Cadastro de pacientes</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <a class="card-link" href="pacientes_cadastro.html">
+                    <h3>Agendamento de consultas</h3>
                 </a>
             </div>
         </div>
         
+        <div>
         <h2><img src="img/c.a paciente.png"><!-- <a href="https://www.flaticon.com/br/icones-gratis/tratamento" title="tratamento ícones">Tratamento ícones criados por Muhammad_Usman - Flaticon</a> --> Consultas e exames agendados</h2>
         
-        <form id="formBusca" action="pacientes_agendamentos.html">
-            <input type="text" id="campoBusca" placeholder="Digite CPF, Nome Completo ou Prontuário">
+        <form id="formBusca1" action="pacientes_agendamentos.html">
+            <input type="text" id="campoBusca1" placeholder="Digite CPF, Nome Completo ou Prontuário">
             <button type="submit">Buscar</button>
-        </form>         
+        </form> 
+          
 
         <h2><img src="img/historia.png">Prontuário Clínico</h2><!--<a href="https://www.flaticon.com/br/icones-gratis/historia" title="história ícones">História ícones criados por Tempo_doloe - Flaticon</a>-->
 
-        <form id="formBusca" action="pacientes_prontuario.html">
-            <input type="text" id="campoBusca" placeholder="Digite CPF, Nome Completo ou Prontuário">
+        <form id="formBusca2" action="pacientes_prontuario.html">
+            <input type="text" id="campoBusca2" placeholder="Digite CPF, Nome Completo ou Prontuário">
             <button type="submit">Buscar</button>
         </form>   
 
         <script>
-            const form = document.getElementById("formBusca");
-            const campo = document.getElementById("campoBusca");
+        function validar(formId, campoId) {
+            const form = document.getElementById(formId);
+            const campo = document.getElementById(campoId);
 
             form.addEventListener("submit", function(event) {
                 if (campo.value.trim() === "") {
-                    event.preventDefault(); 
+                    event.preventDefault();
                     alert("Digite CPF, Nome Completo ou Prontuário");
                 }
             });
+        }
+
+        validar("formBusca1", "campoBusca1");
+        validar("formBusca2", "campoBusca2");
         </script>
+        </div>
         
 
     </main>

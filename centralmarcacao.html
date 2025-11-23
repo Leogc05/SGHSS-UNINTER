@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Consultas - VidaPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="adm.html">ADM Hospitalar</a></li>
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <h1><img src="img/c.a paciente.png"> Marcação de Consultas</h1>
+
+        <div class="form-card">
+
+            <!-- LOCALIZAR PACIENTE -->
+            <h2 class="form-section"> Paciente</h2>
+
+            <input type="text" class="input" placeholder="Digite o nome completo do paciente, CPF OU Prontuário">
+
+            <button class="btn-salvar" style="margin-top: 15px;">Buscar Paciente</button>
+
+            <!-- ESPECIALIDADE -->
+            <h2 class="form-section">Especialidade</h2>
+
+            <select class="input">
+                <option selected>Selecione</option>
+                <option>Urologia</option>
+                <option>Ortopedia</option>
+                <option>Cardiologia</option>
+                <option>Dermatologia</option>
+                <option>Clínico Geral</option>
+                <option>Gastroenterologia</option>
+                <option>Pediatria</option>
+            </select>
+
+
+            <!-- MÉDICO -->
+            <h2 class="form-section"> Médico</h2>
+
+            <select class="input">
+                <option selected>Selecione</option>
+                <option>Dr. João Silva — Urologia</option>
+                <option>Dra. Ana Paula — Ortopedia</option>
+                <option>Dr. Marcos Júnior — Cardiologia</option>
+                <option>Dra. Carla Menezes — Dermatologia</option>
+            </select>
+
+
+            <!-- DATA E HORÁRIO -->
+            <h2 class="form-section"> Data e Horário Disponíveis</h2>
+
+            <div class="info-grid">
+                <div>
+                    <select class="input">
+                        <option selected>Selecione a data</option>
+                        <option>10/12/2025</option>
+                        <option>12/12/2025</option>
+                        <option>15/12/2025</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select class="input">
+                        <option selected>Selecione o horário</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:30</option>
+                        <option>13:00</option>
+                        <option>14:30</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- BOTÃO FINAL -->
+            <button class="btn-salvar">Confirmar Agendamento</button>
+
+        </div>
+
+        <h1><img src="img/c.a paciente.png"> Marcação de Exames</h1>
+
+        <div class="form-card">
+
+            <!-- LOCALIZAR PACIENTE -->
+            <h2 class="form-section"> Paciente</h2>
+
+            <input type="text" class="input" placeholder="Digite o nome completo, CPF ou Prontuário">
+
+            <button class="btn-salvar" style="margin-top: 15px;">Buscar Paciente</button>
+
+
+            <!-- TIPO DE EXAME -->
+            <h2 class="form-section">Tipo de Exame</h2>
+
+            <select class="input">
+                <option selected>Selecione o exame</option>
+                <option>Hemograma Completo</option>
+                <option>Ultrassom Abdominal</option>
+                <option>Raio-X de Tórax</option>
+                <option>Tomografia Computadorizada</option>
+                <option>Ressonância Magnética</option>
+                <option>Eletrocardiograma</option>
+                <option>Exame de Urina</option>
+            </select>
+
+
+            <!-- SETOR RESPONSÁVEL -->
+            <h2 class="form-section">Setor / Departamento</h2>
+
+            <select class="input">
+                <option selected>Selecione o setor</option>
+                <option>Imagem</option>
+                <option>Laboratório</option>
+                <option>Cardiologia</option>
+                <option>Neurologia</option>
+            </select>
+
+
+            <!-- PROFISSIONAL -->
+            <h2 class="form-section">Profissional Responsável</h2>
+
+            <select class="input">
+                <option selected>Selecione</option>
+                <option>Dr. Marcos Júnior — Radiologista</option>
+                <option>Dra. Ana Paula — Laboratório</option>
+                <option>Dr. João Silva — Cardiologista</option>
+                <option>Equipe Técnica de Imagem</option>
+            </select>
+
+
+            <!-- DATA E HORÁRIO -->
+            <h2 class="form-section">Datas e Horários Disponíveis</h2>
+
+            <div class="info-grid">
+                <div>
+                    <select class="input">
+                        <option selected>Selecione a data</option>
+                        <option>10/12/2025</option>
+                        <option>12/12/2025</option>
+                        <option>15/12/2025</option>
+                        <option>18/12/2025</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select class="input">
+                        <option selected>Selecione o horário</option>
+                        <option>07:30</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:30</option>
+                        <option>13:00</option>
+                        <option>14:30</option>
+                    </select>
+                </div>
+            </div>          
+
+            <!-- BOTÃO FINAL -->
+            <button class="btn-salvar">Confirmar Agendamento</button>
+
+        </div>
+
+
+    </main>
+
+</body>
+</html>

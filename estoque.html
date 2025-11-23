@@ -2,16 +2,19 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Estoque</title>
+    <title>Estoque - VidaPlus</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+    <!-- MENU LATERAL -->
     <aside class="sidebar">
         <img src="img/Vida Plus.png">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="pacientes.html">C/A Pacientes</a></li>
+            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a href="leitos.html">Gestão de Leitos</a></li>
             <li><a class="active" href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -21,24 +24,151 @@
         </ul>
     </aside>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="content">
-        <h1><img src="img/estoque.png"> Solicitação de Materiais</h1><!--<a href="https://www.flaticon.com/br/icones-gratis/estoque" title="estoque ícones">Estoque ícones criados por surang - Flaticon</a>-->
 
-        <input type="text" placeholder="Nome do material">
-        <input type="number" placeholder="Quantidade">
+        <h1><img src="img/estoque.png"> Gestão e Controle de Estoque</h1>
 
-        <button>Solicitar</button>
+        <!-- CARDS RESUMO -->
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Itens em Baixa</h3>
+                <p>6 Materiais</p>
+            </div>
+
+            <div class="card">
+                <h3>Itens Críticos</h3>
+                <p>2 Materiais</p>
+            </div>
+
+            <div class="card">
+                <h3>Total de Materiais</h3>
+                <p>148</p>
+            </div>
+
+            <div class="card">
+                <h3>Solicitações Pendentes</h3>
+                <p>4</p>
+            </div>
+
+        </div>
+
+        <!-- FILTROS -->
+        <div class="card" style="margin-top: 25px;">
+            <h3> Filtrar Materiais</h3>
+
+            <div class="info-grid">
+
+                <div>
+                    <label>Pesquisar por nome:</label>
+                    <input type="text" class="input" placeholder="Ex: Luvas, Soro, Gaze...">
+                </div>
+
+                <div>
+                    <label>Categoria:</label>
+                    <select class="input">
+                        <option selected>Todos</option>
+                        <option>Medicamentos</option>
+                        <option>Materiais Cirúrgicos</option>
+                        <option>Descartáveis</option>
+                        <option>Equipamentos</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Status:</label>
+                    <select class="input">
+                        <option selected>Todos</option>
+                        <option>Em Estoque</option>
+                        <option>Baixo</option>
+                        <option>Crítico</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TABELA DE ESTOQUE -->
+        <h2> Materiais em Estoque</h2>
+
+        <table class="table">
+            <tr>
+                <th>Material</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+                <th>Nível</th>
+                <th>Última Reposição</th>
+                <th>Ação</th>
+            </tr>
+
+            <tr>
+                <td>Luvas Cirúrgicas</td>
+                <td>Descartáveis</td>
+                <td>120</td>
+                <td>Em Estoque</td>
+                <td>02/11/2025</td>
+                <td><button>Solicitar +</button></td>
+            </tr>
+
+            <tr>
+                <td>Soro Fisiológico 0,9%</td>
+                <td>Medicamentos</td>
+                <td>14</td>
+                <td style="color: orange;">Baixo</td>
+                <td>01/11/2025</td>
+                <td><button>Repor</button></td>
+            </tr>
+
+            <tr>
+                <td>Máscaras Descartáveis</td>
+                <td>Descartáveis</td>
+                <td>5</td>
+                <td style="color: red;">Crítico</td>
+                <td>29/10/2025</td>
+                <td><button>Urgente</button></td>
+            </tr>
+
+        </table>
+
+        <!-- SOLICITAÇÃO DE MATERIAL -->
+        <h2> Solicitar Materiais</h2>
+
+        <div class="form-card">
+
+            <input type="text" class="input" placeholder="Digite o nome do material">
+            <input type="number" class="input" placeholder="Quantidade">
+
+            <button class="btn-salvar">Enviar Solicitação</button>
+
+        </div>
+
+        <!-- SOLICITAÇÕES PENDENTES -->
+        <h2> Solicitações Pendentes</h2>
 
         <table class="table">
             <tr>
                 <th>Material</th>
                 <th>Quantidade</th>
+                <th>Solicitante</th>
+                <th>Data</th>
                 <th>Status</th>
             </tr>
+
             <tr>
-                <td>Luvas Cirúrgicas</td>
-                <td>120</td>
-                <td>Em Estoque</td>
+                <td>Gaze Estéril</td>
+                <td>30</td>
+                <td>Enfermaria</td>
+                <td>12/11/2025</td>
+                <td>Em análise</td>
+            </tr>
+
+            <tr>
+                <td>Seringas 10ml</td>
+                <td>100</td>
+                <td>Centro Cirúrgico</td>
+                <td>11/11/2025</td>
+                <td>Aguardando liberação</td>
             </tr>
         </table>
 

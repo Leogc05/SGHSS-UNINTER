@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Consultas - VidaPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="paciente_home.html">Início</a></li>
+            <li><a href="paciente_consultas.html">Minhas Consultas</a></li>
+            <li><a href="paciente_exames.html">Meus Exames</a></li>
+            <li><a href="paciente_telemedicina.html">Telemedicina</a></li>
+            <li><a href="paciente_pront.html">Prontuário</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <h1><img src="img/c.a paciente.png"> Marcação de Consultas</h1>
+
+        <div class="form-card">
+
+            <!-- LOCALIZAR PACIENTE -->
+            <h2 class="form-section"> Paciente</h2>
+
+            <input type="text" class="input" placeholder="Digite o nome completo do paciente, CPF OU Prontuário">
+
+            <button class="btn-salvar" style="margin-top: 15px;">Buscar Paciente</button>
+
+            <!-- ESPECIALIDADE -->
+            <h2 class="form-section">Especialidade</h2>
+
+            <select class="input">
+                <option selected>Selecione</option>
+                <option>Urologia</option>
+                <option>Ortopedia</option>
+                <option>Cardiologia</option>
+                <option>Dermatologia</option>
+                <option>Clínico Geral</option>
+                <option>Gastroenterologia</option>
+                <option>Pediatria</option>
+            </select>
+
+
+            <!-- MÉDICO -->
+            <h2 class="form-section"> Médico</h2>
+
+            <select class="input">
+                <option selected>Selecione</option>
+                <option>Dr. João Silva — Urologia</option>
+                <option>Dra. Ana Paula — Ortopedia</option>
+                <option>Dr. Marcos Júnior — Cardiologia</option>
+                <option>Dra. Carla Menezes — Dermatologia</option>
+            </select>
+
+
+            <!-- DATA E HORÁRIO -->
+            <h2 class="form-section"> Data e Horário Disponíveis</h2>
+
+            <div class="info-grid">
+                <div>
+                    <select class="input">
+                        <option selected>Selecione a data</option>
+                        <option>10/12/2025</option>
+                        <option>12/12/2025</option>
+                        <option>15/12/2025</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select class="input">
+                        <option selected>Selecione o horário</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:30</option>
+                        <option>13:00</option>
+                        <option>14:30</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- BOTÃO FINAL -->
+            <button class="btn-salvar">Confirmar Agendamento</button>            
+
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prontuário Clínico - Ana Paula</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="medico_home.html">Início</a></li>
+            <li><a href="medico_pacientes.html">Pacientes</a></li>
+            <li><a href="medico_agenda.html">Agenda</a></li>
+            <li><a href="medico_telemedicina.html">Telemedicina</a></li>
+            <li><a class="active" href="medico_prontana.html">Prontuários</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <h1><img src="img/historia.png"> Prontuário — Ana Paula</h1>
+
+        <div class="form-card">
+
+            <h2 class="form-section">Dados do Paciente</h2>
+
+            <div class="info-grid">
+                <p><strong>Nome:</strong> Ana Paula</p>
+                <p><strong>Idade:</strong> 31 anos</p>
+                <p><strong>CPF:</strong> 291.665.780-09</p>
+                <p><strong>Contato:</strong> (31) 98855-2040</p>
+                <p><strong>Convênio:</strong> Unimed</p>
+                <p><strong>Prontuário:</strong> 330980</p>
+            </div>
+
+            <h2 class="form-section">Histórico Clínico</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                    <th>Resumo</th>
+                </tr>
+                <tr>
+                    <td>12/11/2025</td>
+                    <td>Dr. Marcos Júnior</td>
+                    <td>Clínico Geral</td>
+                    <td>Episódios leves de enxaqueca.</td>
+                </tr>
+                <tr>
+                    <td>02/07/2025</td>
+                    <td>Dra. Carla Menezes</td>
+                    <td>Dermatologia</td>
+                    <td>Alergia cutânea tratada com pomada tópica.</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Exames Realizados</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Hemograma Completo</td>
+                    <td>10/11/2025</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Ressonância - Crânio</td>
+                    <td>14/11/2025</td>
+                    <td>Sem alterações</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Prescrições</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Medicação</th>
+                    <th>Orientações</th>
+                </tr>
+                <tr>
+                    <td>12/11/2025</td>
+                    <td>Dr. Marcos Júnior</td>
+                    <td>Naproxeno 500mg</td>
+                    <td>Tomar 1 comprimido ao dia</td>
+                </tr>
+            </table>
+
+            <button class="btn-pdf">Gerar PDF do Prontuário</button>
+
+        </div>
+    </main>
+
+</body>
+</html>

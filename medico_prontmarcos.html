@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prontuário Clínico - Marcos Oliveira</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="medico_home.html">Início</a></li>
+            <li><a href="medico_pacientes.html">Pacientes</a></li>
+            <li><a href="medico_agenda.html">Agenda</a></li>
+            <li><a href="medico_telemedicina.html">Telemedicina</a></li>
+            <li><a class="active" href="medico_prontmarcos.html">Prontuários</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <h1><img src="img/historia.png"> Prontuário — Marcos Oliveira</h1>
+
+        <div class="form-card">
+
+            <h2 class="form-section">Dados do Paciente</h2>
+
+            <div class="info-grid">
+                <p><strong>Nome:</strong> Marcos Oliveira</p>
+                <p><strong>Idade:</strong> 40 anos</p>
+                <p><strong>CPF:</strong> 810.445.320-21</p>
+                <p><strong>Contato:</strong> (31) 98744-5580</p>
+                <p><strong>Convênio:</strong> Bradesco Saúde</p>
+                <p><strong>Prontuário:</strong> 510220</p>
+            </div>
+
+            <h2 class="form-section">Histórico Clínico</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                    <th>Resumo</th>
+                </tr>
+                <tr>
+                    <td>03/11/2025</td>
+                    <td>Dra. Clara Ribeiro</td>
+                    <td>Cardiologia</td>
+                    <td>Relato de cansaço e pressão oscilando.</td>
+                </tr>
+                <tr>
+                    <td>12/06/2025</td>
+                    <td>Dr. João Silva</td>
+                    <td>Urologia</td>
+                    <td>Exame preventivo anual.</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Exames Realizados</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>ECG</td>
+                    <td>04/11/2025</td>
+                    <td>Alterações leves</td>
+                </tr>
+                <tr>
+                    <td>Exame de Urina</td>
+                    <td>13/06/2025</td>
+                    <td>Normal</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Prescrições</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Medicação</th>
+                    <th>Orientações</th>
+                </tr>
+                <tr>
+                    <td>03/11/2025</td>
+                    <td>Dra. Clara Ribeiro</td>
+                    <td>Losartana 50mg</td>
+                    <td>Tomar 1x ao dia</td>
+                </tr>
+            </table>
+
+            <button class="btn-pdf">Gerar PDF do Prontuário</button>
+
+        </div>
+    </main>
+
+</body>
+</html>

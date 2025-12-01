@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Prontuário Clínico - Leonardo Costa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="medico_home.html">Início</a></li>
+            <li><a href="medico_pacientes.html">Pacientes</a></li>
+            <li><a href="medico_agenda.html">Agenda</a></li>
+            <li><a href="medico_telemedicina.html">Telemedicina</a></li>
+            <li><a class="active" href="medico_prontleo.html">Prontuários</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <h1><img src="img/historia.png"> Prontuário — Leonardo Costa</h1>
+
+        <div class="form-card">
+
+            <h2 class="form-section">Dados do Paciente</h2>
+
+            <div class="info-grid">
+                <p><strong>Nome:</strong> Leonardo Costa</p>
+                <p><strong>Idade:</strong> 23 anos</p>
+                <p><strong>CPF:</strong> 412.987.190-40</p>
+                <p><strong>Contato:</strong> (31) 99982-1104</p>
+                <p><strong>Convênio:</strong> SUS</p>
+                <p><strong>Prontuário:</strong> 450120</p>
+            </div>
+
+            <h2 class="form-section">Histórico Clínico</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                    <th>Resumo</th>
+                </tr>
+                <tr>
+                    <td>18/11/2025</td>
+                    <td>Dr. João Batista</td>
+                    <td>Clínico Geral</td>
+                    <td>Queixa de dores musculares após treino intenso.</td>
+                </tr>
+                <tr>
+                    <td>04/08/2025</td>
+                    <td>Dra. Ana Paula</td>
+                    <td>Ortopedia</td>
+                    <td>Distensão leve no ombro esquerdo.</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Exames Realizados</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Raio-X do Ombro</td>
+                    <td>05/08/2025</td>
+                    <td>Sem fraturas</td>
+                </tr>
+                <tr>
+                    <td>Hemograma Completo</td>
+                    <td>20/11/2025</td>
+                    <td>Normal</td>
+                </tr>
+            </table>
+
+            <h2 class="form-section">Prescrições</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Medicação</th>
+                    <th>Orientações</th>
+                </tr>
+                <tr>
+                    <td>18/11/2025</td>
+                    <td>Dr. João Batista</td>
+                    <td>Ibuprofeno 400mg</td>
+                    <td>Tomar 2x ao dia por 3 dias</td>
+                </tr>
+            </table>
+
+            <button class="btn-pdf">Gerar PDF do Prontuário</button>
+
+        </div>
+    </main>
+
+</body>
+</html>

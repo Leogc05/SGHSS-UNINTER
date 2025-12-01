@@ -43,7 +43,7 @@ body {
     text-decoration: none;
     font-size: 15px;
     display: block;
-    padding: 8px;
+    padding: 17px;
     border-radius: 8px;
     transition: 0.3s;
 }
@@ -261,4 +261,38 @@ button:hover {
 .btn-salvar:hover {
     background: #0d7afd;
 }
+
+/* ======= CHECKBOX DE NOTIFICAÇÕES ======= */
+.checkbox-notificar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #0a65c2;
+    margin-top: 10px;
+    grid-column: 1 / 3; /* ocupa largura total, igual aos títulos */
+}
+
+.checkbox-notificar input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* ======= BOTÃO CANCELAR EM TABELAS ======= */
+.btn-cancelar {
+    padding: 8px 14px;
+    background: #d62828; /* Vermelho */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-cancelar:hover {
+    background: #b71c1c;
+}
+
 

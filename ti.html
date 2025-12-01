@@ -12,7 +12,6 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="pacientes.html">C/A Pacientes</a></li>
-            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a href="leitos.html">Gestão de Leitos</a></li>
             <li><a href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -23,14 +22,110 @@
     </aside>
 
     <main class="content">
-        <h1><img src="img/ti.png"> Gestão de Usuários</h1><!--<a href="https://www.flaticon.com/br/icones-gratis/ele-sistemas" title="ele sistemas ícones">Ele sistemas ícones criados por Uniconlabs - Flaticon</a>-->
 
-        <input type="text" placeholder="Nome do usuário...">
+        <h1><img src="img/ti.png"> Gestão de Usuários</h1>
+
+        <!-- ================== BUSCA DE USUÁRIOS ================== -->
+        <h2>Consultar Usuário</h2>
+        <input type="text" placeholder="Digite o nome do usuário...">
         <button>Buscar</button>
 
-        <h2>Alterar Senha</h2>
-        <input type="password" placeholder="Nova senha">
-        <button>Salvar</button>
+        <!-- ================== TABELA ================== -->
+        <table class="table">
+            <tr>
+                <th>Usuário</th>
+                <th>Setor</th>
+                <th>Status</th>
+                <th>Ação</th>
+            </tr>
+            <tr>
+                <td>Marcos Silva</td>
+                <td>Enfermagem</td>
+                <td>Ativo</td>
+                <td><button>Gerenciar</button></td>
+            </tr>
+            <tr>
+                <td>Ana Paula</td>
+                <td>Recepção</td>
+                <td>Ativo</td>
+                <td><button>Gerenciar</button></td>
+            </tr>
+            <tr>
+                <td>João Carlos</td>
+                <td>TI</td>
+                <td>Bloqueado</td>
+                <td><button>Gerenciar</button></td>
+            </tr>
+        </table>
+
+        <!-- ================== CARDS DE AÇÕES DE TI ================== -->
+        <h2>Ações de T.I</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Reset de Senha</h3>
+                <p>Recuperar ou redefinir senha de usuários com dificuldades de acesso.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bloqueio / Desbloqueio</h3>
+                <p>Gerencie permissões de usuários ativos e inativos no sistema.</p>
+            </div>
+
+            <div class="card">
+                <h3>Perfis e Acessos</h3>
+                <p>Controle categorias: Médico, Administrador, Recepção, T.I, Paciente.</p>
+            </div>
+        </div>
+
+        <!-- ================== FORMULÁRIO COMPLETO ================== -->
+        <div class="form-card" style="margin-top:30px;">
+            <h2>Alterar Dados de Acesso</h2>
+
+            <div class="form-grid">
+                <div>
+                    <label>Nome do Usuário</label>
+                    <input type="text" placeholder="Ex: João Silva">
+                </div>
+
+                <div>
+                    <label>Novo Setor</label>
+                    <select>
+                        <option>Selecione</option>
+                        <option>Enfermagem</option>
+                        <option>TI</option>
+                        <option>Recepção</option>
+                        <option>Administração</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Novo Perfil</label>
+                    <select>
+                        <option>Selecione</option>
+                        <option>Administrador</option>
+                        <option>Médico</option>
+                        <option>Recepção</option>
+                        <option>Paciente</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select>
+                        <option>Ativo</option>
+                        <option>Bloqueado</option>
+                    </select>
+                </div>
+
+                <div class="form-section">Alterar Senha</div>
+
+                <div>
+                    <input type="password" placeholder="Nova senha">
+                </div>
+
+                <button class="btn-salvar">Salvar Alterações</button>
+            </div>
+        </div>
 
     </main>
 

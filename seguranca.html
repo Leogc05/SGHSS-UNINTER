@@ -12,7 +12,6 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="pacientes.html">C/A Pacientes</a></li>
-            <li><a href="centralmarcacao.html">Central de Marcação</a></li>
             <li><a href="leitos.html">Gestão de Leitos</a></li>
             <li><a href="estoque.html">Estoque</a></li>
             <li><a href="adm.html">ADM Hospitalar</a></li>
@@ -23,15 +22,17 @@
     </aside>
 
     <main class="content">
-        <h1><img src="img/seguranca.png"> Segurança e LGPD</h1><!--<a href="https://www.flaticon.com/br/icones-gratis/seguranca" title="segurança ícones">Segurança ícones criados por Freepik - Flaticon</a>-->
+        
+        <h1><img src="img/seguranca.png"> Segurança e LGPD</h1>
 
+        <!-- =================== TABELA PRINCIPAL =================== -->
         <table class="table">
             <tr>
                 <th>Recurso</th>
                 <th>Status</th>
             </tr>
             <tr>
-                <td>Controle de Acesso</td>
+                <td>Controle de Acesso por Perfil</td>
                 <td>Operando</td>
             </tr>
             <tr>
@@ -39,8 +40,111 @@
                 <td>Ativo</td>
             </tr>
             <tr>
-                <td>LGPD</td>
+                <td>Criptografia de Dados</td>
+                <td>Ativa</td>
+            </tr>
+            <tr>
+                <td>Conformidade LGPD</td>
                 <td>Em Conformidade</td>
+            </tr>
+            <tr>
+                <td>Backups Automáticos</td>
+                <td>Funcionando</td>
+            </tr>
+        </table>
+
+        <!-- =================== PAINEL DE POLÍTICAS =================== -->
+        <h2>Políticas e Protocolos</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Política de Privacidade</h3>
+                <p>Define como os dados pessoais são coletados, utilizados e protegidos dentro do SGHSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Política de Segurança</h3>
+                <p>Normas de autenticação, permissões, auditoria e proteção contra acessos indevidos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Retenção de Dados</h3>
+                <p>Determina os prazos e critérios de armazenamento e descarte seguro das informações.</p>
+            </div>
+        </div>
+
+        <!-- =================== INDICADORES =================== -->
+        <h2 style="margin-top: 40px;">Indicadores de Segurança</h2>
+
+        <div class="chart-container">
+
+            <div class="chart">
+                <h3>Incidentes Bloqueados</h3>
+                <div class="chart-bars">
+                    <div class="bar" style="height: 80%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 90%;"></div>
+                </div>
+                <div class="chart-labels">Últimos 3 meses</div>
+            </div>
+
+            <div class="chart">
+                <h3>Acessos Indevidos</h3>
+                <div class="chart-bars">
+                    <div class="bar" style="height: 20%;"></div>
+                    <div class="bar" style="height: 15%;"></div>
+                    <div class="bar" style="height: 10%;"></div>
+                </div>
+                <div class="chart-labels">Últimos 3 meses</div>
+            </div>
+
+        </div>
+
+        <!-- =================== LGPD =================== -->
+        <div class="form-card" style="margin-top: 40px;">
+            <h2>Conformidade LGPD</h2>
+            <p>O SGHSS segue integralmente a Lei Geral de Proteção de Dados (Lei 13.709/2018), aplicando princípios como finalidade, necessidade, transparência e segurança.</p>
+
+            <ul>
+                <li>Coleta apenas dados essenciais para o atendimento médico.</li>
+                <li>Consentimento explícito para uso de dados sensíveis.</li>
+                <li>Criptografia aplicada em banco de dados, APIs e transmissão.</li>
+                <li>Logs detalhados de todas as operações do sistema.</li>
+                <li>Controle de acesso baseado em perfis (Paciente, Médico, ADM).</li>
+                <li>Direito de acesso, correção e eliminação dos dados pelo paciente.</li>
+                <li>Backups diários e replicação segura para prevenção de perda de dados.</li>
+                <li>Retenção mínima obrigatória de prontuário médico: 20 anos.</li>
+            </ul>
+        </div>
+
+        <!-- =================== STATUS GERAL =================== -->
+        <h2 style="margin-top: 40px;">Status Geral de Segurança</h2>
+
+        <table class="table">
+            <tr>
+                <th>Item</th>
+                <th>Nível</th>
+                <th>Última Atualização</th>
+            </tr>
+            <tr>
+                <td>Criptografia de Dados</td>
+                <td>Alta</td>
+                <td>Há 2 dias</td>
+            </tr>
+            <tr>
+                <td>Monitoramento de Logs</td>
+                <td>100%</td>
+                <td>Hoje</td>
+            </tr>
+            <tr>
+                <td>Backups Automáticos</td>
+                <td>100% Funcionando</td>
+                <td>Hoje</td>
+            </tr>
+            <tr>
+                <td>Detecção de Anomalias</td>
+                <td>Normal</td>
+                <td>Esta semana</td>
             </tr>
         </table>
 

@@ -9,7 +9,7 @@
 
     <!-- MENU LATERAL -->
     <aside class="sidebar">
-        <img src="img/Vida Plus.png">
+        <img src="img/Vida Plus.png" alt="Logo Vida Plus">
         <ul>
             <li><a href="paciente_home.html">Início</a></li>
             <li><a href="paciente_consultas.html">Minhas Consultas</a></li>
@@ -20,24 +20,83 @@
         </ul>
     </aside>
 
-        <main class="content">
+    <main class="content">
 
-            <h2>AGENDAR</h2>   
-            <div class="card-container">
-                <div class="card">
-                    <a class="card-link" href="paciente_agc.html">
-                        <h3>CONSULTAS</h3>
-                    </a>
-                </div>
+        <!-- DADOS DO PACIENTE -->
+        <div class="form-card">
+            <h2>Meus Dados</h2>
+            <div>
+                <strong>Nome:</strong> João da Silva<br>
+                <strong>CPF:</strong> 123.456.789-10<br>
+                <strong>Plano de Saúde:</strong> Vida Plus Ouro<br>
+                <strong>Número do Prontuário:</strong> 202509<br>
+            </div>            
+        </div>        
 
-                <div class="card">
-                    <a class="card-link" href="paciente_age.html">
-                        <h3>EXAMES</h3>
-                    </a>
-                </div>
-            </div>    
-                
-        </main>
+        <h1>Bem-vindo(a) ao Portal do Paciente</h1>
+
+        <!-- AGENDAR -->
+        <h2>Agendar</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <a class="card-link" href="paciente_agc.html">
+                    <h3><img src="img/c.a paciente.png">Agendar Consulta</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a class="card-link" href="paciente_age.html">
+                    <h3>
+                        <h3><img src="img/c.a paciente.png">Agendar Exame</h3>                        
+                    </h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- PRÓXIMOS AGENDAMENTOS -->
+        <h2><img src="img/historia.png">Próximos Atendimentos</h2>
+
+        <table class="table">
+            <tr>
+                <th>Tipo</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Profissional</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Consulta</td>
+                <td>25/03/2025</td>
+                <td>14:00</td>
+                <td>Dr. Marcos Lima</td>
+                <td>Confirmada</td>
+            </tr>
+            <tr>
+                <td>Exame</td>
+                <td>28/03/2025</td>
+                <td>09:30</td>
+                <td>Raio-X</td>
+                <td>Aguardando</td>
+            </tr>
+        </table>
+
+        <!-- PRONTUÁRIO -->
+        <h2 style="margin-top: 40px;">
+            <img src="img/historia.png" alt=""> Último Registro no Prontuário
+        </h2>
+
+        <div class="form-card">
+            <p><strong>Data:</strong> 10/03/2025</p>
+            <p><strong>Médico:</strong> Dr. Ana Ribeiro</p>
+            <p><strong>Resumo:</strong> Avaliação cardiológica, pressão estabilizada. Exames solicitados para acompanhamento. Retorno em 30 dias.</p>
+
+            <a href="paciente_pront.html">
+                <button class="btn-salvar" style="width: 100%;">Ver Prontuário Completo</button>
+            </a>
+        </div>
+
+    </main>
 
 </body>
 </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Profissionais</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <img src="img/Vida Plus.png">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pacientes.html">C/A Pacientes</a></li>            
+            <li><a href="leitos.html">Gestão de Leitos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="adm.html">ADM Hospitalar</a></li>
+            <li><a href="seguranca.html">Segurança</a></li>
+            <li><a href="ti.html">Apoio T.I</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+        <h1>Cadastro de Profissionais</h1>
+
+        <div class="form-card">
+
+            <!-- FOTO -->
+            <div class="foto-container">
+                <div class="foto-box">FOTO</div>
+                <button class="btn-foto">Enviar Foto</button>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="form-section">Dados do Profissional</div>
+
+                    <div>
+                        <label>Nome Completo</label><br>
+                        <input type="text" placeholder="Digite o nome completo">
+                    </div>
+
+                    <div>
+                        <label>CPF</label><br>
+                        <input type="text" placeholder="___.___.___-__">
+                    </div>
+
+                    <div>
+                        <label>Cargo</label><br>
+                        <select>
+                            <option value="">Selecione</option>
+                            <option value="Medico">Médico</option>
+                            <option value="Enfermeiro">Enfermeiro</option>
+                            <option value="Tecnico">Técnico de Enfermagem</option>
+                            <option value="Administrativo">Administrativo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Especialidade</label><br>
+                        <input type="text" placeholder="Ex: Cardiologia, Pediatria...">
+                    </div>
+
+                    <div>
+                        <label>CRM / COREN</label><br>
+                        <input type="text" placeholder="Registro profissional">
+                    </div>
+
+                    <div>
+                        <label>Telefone</label><br>
+                        <input type="text" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div>
+                        <label>E-mail</label><br>
+                        <input type="email" placeholder="email@hospital.com">
+                    </div>
+
+                    <div>
+                        <label>Unidade / Setor</label><br>
+                        <input type="text" placeholder="Ex: UTI, Consultórios, Emergência...">
+                    </div>
+
+                    <div class="form-section">Configurações</div>
+
+                    <div>
+                        <label>Status</label><br>
+                        <select>
+                            <option value="">Selecione</option>
+                            <option value="Ativo">Ativo</option>
+                            <option value="Inativo">Inativo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Turno</label><br>
+                        <select>
+                            <option value="">Selecione</option>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                            <option>Plantão 12h</option>
+                            <option>Plantão 24h</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-notificar">
+                        <input type="checkbox">
+                        <label>Receber notificações internas do sistema</label>
+                    </div>
+
+                    <button class="btn-salvar" type="submit">Salvar Profissional</button>
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

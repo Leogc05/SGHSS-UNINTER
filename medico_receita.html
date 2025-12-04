@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Receita Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <img src="img/Vida Plus.png">
+    <ul>
+        <li><a href="medico_home.html">Início</a></li>
+        <li><a href="medico_pacientes.html">Pacientes</a></li>
+        <li><a href="medico_agenda.html">Agenda</a></li>
+        <li><a class="active" href="medico_telemedicina.html">Telemedicina</a></li>
+        <li><a href="medico_prontuario.html">Prontuários</a></li>
+        <li><a href="login.html">Sair</a></li>
+    </ul>
+</aside>
+
+<main class="content">
+    <h1>Emitir Receita Digital</h1>
+
+    <div class="form-card">
+        <div class="form-grid">
+
+            <input type="text" placeholder="Nome do Paciente">
+            <input type="date">
+
+            <input type="text" placeholder="CPF do Paciente">
+            <input type="text" placeholder="Convênio">
+
+            <div class="form-section">Receita Médica</div>
+
+            <textarea rows="6" placeholder="Descreva os medicamentos e dosagens..."></textarea>
+            
+            <a href="medico_telemedicina.html">
+                <button class="btn-salvar">Gerar Receita</button>
+            </a>
+
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

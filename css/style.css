@@ -266,6 +266,19 @@ button:hover {
     background: #b71c1c;
 }
 
+.btn-concluida {
+    padding: 8px 14px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-concluida {
+    background: green;
+}
+
 /* ======= TELEMEDICINA ======= */
 .telemed-container {
     margin-left: 260px;
